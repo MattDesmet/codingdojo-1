@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  background-color: yellow;
+  width: 960px;
+
+}
+/*inside wrapper from here*/
+    .header {
+    background-color: blue;
+    height: 100px;
+    width: 960px;
+    display: block;
+
+    }
+    .middlecontent {
+    background-color: white;
+
+    }
+    /*inner content of middle div*/
+        .started {
+          background-color: pink;
+          display: inline-block;
+          height: 500px;
+          width: 470px;
+          }
+          /*child list started*/
+              .started ul {
+              display: inline;
+
+                }
+          .apps {
+          background-color: purple;
+          display: inline-block;
+          height: 500px;
+          width: 470px;
+          }
+          /*child list apps*/
+              .apps ul {
+                text-align: right;
+                display: inline;
+              }
+    /*end of inner mid content    */
+    .footer {
+      background-color: blue;
+    }
