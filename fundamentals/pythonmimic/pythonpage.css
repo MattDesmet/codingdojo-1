@@ -1,0 +1,281 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  background-color: yellow;
+  width: 960px;
+
+}
+/*inside wrapper from here*/
+    .header {
+    background-color: blue;
+    height: 500px;
+    width: 960px;
+    display: block;
+    padding-bottom: 20px;
+
+    }
+/*header styling content*/
+    .txtsmlg {
+
+    }
+    .header p {
+      text-align: right;
+      display: inline;
+
+    }
+        #textsize {
+          color: white;
+          text-align: right;
+          margin-left: 800px;
+        }
+    .header p a {
+      color: yellow;
+      text-align: right;
+
+    }
+    #large {
+      color: yellow;
+      text-align: right;
+
+
+    }
+    #bar {
+      color: black;
+      margin: 0px;
+      text-align: right;
+      display: inline;
+
+    }
+          .logostyle {
+           /*empty for now*/
+          }
+                        .logostyle img {
+                          width: 390px;
+                          height: 100px;
+
+                        }
+
+
+              /*div inside of logostyle for search bar and button*/
+                #searchbar {
+                height: 70px;
+                width: 240px;
+                display: inline-block;
+                margin-left: 300px;
+                margin-top: 5px;
+                margin-right: 20px;
+                background-color: #404040;
+                /*float: right;      /*I cheated and i used float (at the time i didnt realize it wasn't allowed for this assignment)! Please show me another way to do this? I tried to find one unsuccessfully*/*/
+                box-shadow: 3px 3px 5px;
+                border-radius: 10px;
+                vertical-align: top;
+                }
+                          #searchbar input {
+                          display: inline;
+                          height: 30px;
+                          width: 140px;
+                          margin: 20px;
+                          border-radius: 10px;
+                          border-color: gray;
+                          text-align: center;
+                        }
+                        #searchbar button {
+                          display: inline;
+                          height: 25px;
+                          width: 40px;
+                          border-radius: 5px;
+                          color: white;
+                          height: 30px;
+                          background-color: blue;
+                          width: 40px;
+                        }
+
+
+          #navbar {
+            width: 780px;
+            height: 50px;
+            background-color: navy;
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-right: 10px;
+            border-radius: 5px;
+            padding-top: 20px;
+            padding-left: 40px;
+            padding-right: 40px;
+            box-shadow: 5px 5px 8px;
+
+
+          }
+          /*paragraphs inside of nav bar*/
+              #navbar p {
+                display: inline;
+                color: white;
+                margin: 15px;
+                font-size: 25px;
+
+              }
+              #navbar a{
+                color: white;
+                text-decoration: none;
+              }
+          #headerlinks {
+            background-color: blue;
+            height: 200px;
+            width: 300px;
+            width 50px;
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 0px;
+            margin-left: 50px;
+          }
+            /*list inside of the header links*/
+            #headerlinks ul {
+              list-style-type: ;
+              margin: 0;
+              padding: 0;
+
+            }
+              #headerlinks li {
+                margin-left: 80px;
+                font-size: 18px;
+                text-align: center;
+              }
+              #headerlinks a {
+                color: white;
+              }
+          #aboutsite {
+            background-color: blue;
+            height: 200px;
+            width: 600px;
+            display: inline-block;
+            margin-top: 20px;
+            vertical-align: top;
+          }
+          /*paragraphs inside of about site*/
+          #aboutsite p {
+            text-align: center;
+            color: white;
+            margin-right: 50px;
+          }
+          /*heading messages under about site text*/
+          #aboutsite h3 {
+            margin-top: 10px;
+            text-align: center;
+            color: yellow;
+          }
+          #aboutsite h4 {
+            margin-top: 10px;
+            text-align: center;
+            color: white;
+          }
+
+
+/*end of header styling content*/
+    .middlecontent {
+    background-color: white;
+
+    }
+/*inner content of middle div*/
+    /*left side of middle content*/
+        .started {
+          background-color: white;
+          display: inline-block;
+          height: 220px;
+          width: 480px;
+          padding-top: 10px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          border-top: 5px;
+          border-width: medium;
+          border-color: navy;
+          }
+              /*Styling for getting started middle-left content*/
+              .started h3{
+                text-align: center;
+              }
+              #abtstart {
+                margin-top: 5px;
+                margin-left: 120px;
+                text-align: center;
+                font-size: 13px;
+                font-family: sans-serif;
+                width: 240px;
+                word-wrap: break-word;
+              }
+              #getstartlist {
+                margin-left: 10px;
+                margin-bottom: 5px;
+              }
+                  .started li {
+                  width: 240px;
+                  word-wrap: break-word;
+                  text-align: center;
+                  color: aqua;
+                  margin-left: 120px;
+                  padding-left: 5px;
+                  }
+    /*right side of middle content*/
+          .apps {
+          background-color: white;
+          display: inline-block;
+          height: 220px;
+          width: 476px;
+          border-top: 2px aqua;
+          padding-top: 10px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          vertical-align: top;
+          }
+
+                  .apps h3{
+                    text-align: center;
+                  }
+                  #abtstart2 {
+                    margin-top: 5px;
+                    margin-left: 120px;
+                    text-align: center;
+                    font-size: 13px;
+                    font-family: sans-serif;
+                    width: 240px;
+                    word-wrap: break-word;
+                  }
+                  #getstartlist2 {
+                    margin-left: 10px;
+                    margin-bottom: 5px;
+                  }
+                      .apps li {
+                      width: 240px;
+                      word-wrap: break-word;
+                      text-align: center;
+                      color: aqua;
+                      margin-left: 120px;
+                      padding-left: 5px;
+                      }
+          /*child list apps*/
+              /*.apps ul {
+                text-align: right;
+                display: inline;
+              }*/
+    /*end of inner mid content    */
+    .footer {
+      background-color: blue;
+      height:100px;
+      padding-left: 50px;
+      padding-top: 20px
+
+
+    }
+    /*footer styling*/
+          .footer div {
+            display: inline-block;
+            color: white;
+            margin-left: 50px;
+            padding: 20px;
+            text-align: center;
+          }
+          #cp {
+            display: block;
+            margin-left: 0px;
+            }

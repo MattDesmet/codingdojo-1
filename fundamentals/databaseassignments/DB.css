@@ -1,0 +1,266 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: orchid;
+}
+          /*wrapper upper portion styling*/
+.header {
+  background-color: white;
+}
+          .header img {
+            display: inline-block;
+            height: 15%;
+            width: 15%;
+          }
+          .header h3 {
+            display: inline-block;
+            margin-left: 447px;
+            vertical-align: top;
+            margin-top: 56px;
+          }
+
+          /*horizontal nav bar styling*/
+    #navbar {
+      height: 40px;
+      border: 1px solid black;
+    }
+          #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            height: 30px;
+            /*border: 1px solid black;*/
+
+
+          }
+          #navbar li {
+            display: inline-block;;
+            text-align: center;
+            border-right: 1px solid black;
+            padding-right: 29px;
+            padding-left: 43px;
+            height: 30px;
+            padding-top: 10px;
+          }
+          /*end of header styling*/
+
+  .tophalf {
+    /*display: inline-block;*/
+    margin: 20px;
+    background-color: orchid;
+
+  }
+          #dbpic {
+            display: inline;
+            vertical-align: top;
+            /*border: 1px solid black;*/
+          }
+
+                  #dbpic img {
+                    height: 50%;
+                    width: 50%;
+                    border: 10px solid silver;
+            }
+          #infowrap {
+            background-color: silver;
+            border: 1px solid black;
+            width: 402px;
+            height: 326px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 36px;
+            }
+                #infowrap h4 {
+                  text-align: center;
+                  padding: 10px;
+                  background-color: gray;
+                }
+                /*#infowrap p {
+                  word-wrap: break-word;
+                  padding: 10px;
+              instead v v v  }*/
+                #setOFdata {
+                  font-weight: bold;
+                }
+
+                #infowrap p {
+
+                  word-wrap: break-word;
+                  padding: 10px;
+                }
+    .tophalf a {
+      font-size: 8px;
+      margin-left: 862px;
+    }
+/*end of top half styling*/
+
+/*beginning of bottom half styling*/
+.bottomhalf {
+  display: inline-block;
+}
+
+          #storage {
+          /*display: inline;*/
+          display: inline-block;
+          border: 1px solid black;
+          height: 600px;
+          background-color: skyblue;
+          margin: 5px 5px 5px 20px;
+
+          }
+                #storage h4 {
+                  padding-left: 10px;
+                  background-color: gray;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
+                #storage img {
+                  display: inline;
+                  height: 145px;
+                  width: 220px;
+                  border-bottom: 1px solid black;
+                  margin-bottom: 10px;
+                }
+                #storage p {
+                  word-wrap: break-word;
+                  width: 200px;
+                  padding: 10px;
+                  background-color: skyblue;
+
+                }
+                #storage button {
+                  padding-left: 12px;
+                  padding-right: 12px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  margin-left: 102px;
+                  margin-top: 50px;
+                  box-shadow: 3px 7px 3px;
+                  border-radius: 7px;
+                  border: 2px solid black;
+                }
+
+            #searching {
+          /*display: inline;*/
+          display: inline-block;
+          border: 1px solid black;
+          height: 600px;
+          vertical-align: top;
+          margin: 5px;
+          background-color: skyblue;
+          }
+                #searching h4 {
+                  padding-left: 10px;
+                  background-color: gray;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
+
+                #searching img {
+                  display: inline-block;
+                  height: 145px;
+                  width: 220px;
+                  border-bottom: 1px solid black;
+                  margin-bottom: 10px;
+                }
+                #searching p {
+                  word-wrap: break-word;
+                  width: 200px;
+                  padding: 10px;
+                  background-color: skyblue;
+                }
+                #searching button {
+                  padding-left: 12px;
+                  padding-right: 12px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  margin-left: 102px;
+                  margin-top: 50px;
+                  box-shadow: 3px 7px 3px;
+                  border-radius: 7px;
+                  border: 2px solid black;
+                }
+
+          #interaction {
+          /*display: inline;*/
+          display: inline-block;
+          border: 1px solid black;
+          height: 600px;
+          vertical-align: top;
+          margin: 5px;
+          background-color: skyblue;
+          }
+                #interaction h4 {
+                  padding-left: 10px;
+                  background-color: gray;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
+
+                #interaction img {
+                  height: 145px;
+                  width: 220px;
+                  border-bottom: 1px solid black;
+                  margin-bottom: 10px;
+                  /*display: inline-block;*/
+                }
+                #interaction p {
+                  word-wrap: break-word;
+                  width: 200px;
+                  background-color: skyblue;
+                  padding: 10px;
+                }
+                #interaction button {
+                  padding-left: 12px;
+                  padding-right: 12px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  margin-left: 102px;
+                  margin-top: 50px;
+                  box-shadow: 3px 7px 3px;
+                  border-radius: 7px;
+                  border: 2px solid black;
+                }
+
+
+            #companies {
+          /*display: inline;*/
+          display: inline-block;
+          border: 1px solid black;
+          height: 600px;
+          vertical-align: top;
+          margin: 5px;
+          background-color: skyblue;
+          width: 220px;
+          }
+                #companies h4 {
+                  padding-left: 10px;
+                  background-color: gray;
+                  padding-top: 10px;
+                  padding-bottom: 10px;
+                }
+                #companies img {
+                  height: 145px;
+                  width: 220px;
+                  border-bottom: 1px solid black;
+                  margin-bottom: 10px;
+                  /*display: inline-block;*/
+                }
+                #companies p {
+                  word-wrap: break-word;
+                  width: 200px;
+                  background-color: skyblue;
+                  padding: 10px;
+                }
+                #companies button {
+                  padding-left: 12px;
+                  padding-right: 12px;
+                  padding-top: 7px;
+                  padding-bottom: 7px;
+                  margin-left: 102px;
+                  margin-top: 50px;
+                  box-shadow: 3px 7px 3px;
+                  border-radius: 7px;
+                  border: 2px solid black;
+                }
