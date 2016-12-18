@@ -46,7 +46,6 @@ body {
           /*end of header styling*/
 
   .tophalf {
-    /*display: inline-block;*/
     margin: 20px;
     background-color: orchid;
 
@@ -54,7 +53,6 @@ body {
           #dbpic {
             display: inline;
             vertical-align: top;
-            /*border: 1px solid black;*/
           }
 
                   #dbpic img {
@@ -76,10 +74,6 @@ body {
                   padding: 10px;
                   background-color: gray;
                 }
-                /*#infowrap p {
-                  word-wrap: break-word;
-                  padding: 10px;
-              instead v v v  }*/
                 #setOFdata {
                   font-weight: bold;
                 }
