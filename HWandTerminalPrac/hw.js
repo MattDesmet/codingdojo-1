@@ -1,7 +1,7 @@
 var num=6;
 
 while (num < 60001) {
-  console.log(num);
+  console.log(num;
     num+=6;
 }
 

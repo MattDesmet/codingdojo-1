@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+    .wrapper{
+        width: 1020px;
+        height: 940px;
+        background-color: yellow;
+        padding-top: 10px;
+        
+    }
+            #globe {
+                height: 131px;
+                width: 131px;
+                position: absolute; /*note to self: how i made this image on top of div, this in conjuction with adjusting the top margin of .header and the top margin of h1*/
+            }
+            .wrapper h1 {
+                margin-left: 161px;
+                font-size: 50px;
+                margin-top: 30px
+            }
+        .header {
+            background-color: silver;
+            width: 1018px;
+            height: 70px;
+            display: inline-block; 
+            vertical-align: top;
+            margin-top: 25px;
+        }
+            .header h2 {
+                text-align: left;
+                margin-top: 12px;
+                font-size: 35px;
+                margin-left: 12px;
+            }
+        .sidebar {
+            background-color: blue;
+            width: 184px;
+            height: 720px;
+            display: inline-block;
+            vertical-align: top;
+        }
+            .sbtop{
+                background-color: orange;
+                height: 255px;
+                width: 183px;
+                border-bottom: 1px solid black;
+            }
+                .sbtop h4{
+                    margin-top: 10px;
+                    
+                }
+                .sbtop p{
+                    margin-top: 10px;
+                    margin-bottom: 50px;
+                }
+                .sbtop button{
+                    margin-left: 20px;
+                    width: 143px;
+                    height: 30px;
+                    border-radius: 5px;
+                }
+            .sbbottom{
+                margin-top: 30px;
+                height: 330px;
+                width:
+                183px;
+                background-image: url("ad_background.png")
+            }
+                .sbbottom p{
+                    color: white;
+                    font-size: 14px;
+                }
+                .sbbottom img {
+                    height: 140px;
+                    width: 100px;
+                    margin-left: 33px;
+                }
+                .sbbottom button {
+                    height: 30px;
+                    width: 143px;
+                    margin-top: 190px;
+                }
+        .maincontent {
+            background-color: lightpink;
+            width: 830px;
+            height: 860px;
+            display: inline-block
+        }
+            .DNS{
+                background-color: green;
+                width: 829px;
+                height: 95px;
+            }
+                #icon {
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                }
+                .DNS h4{
+                    display: inline-block;
+                }
+                #phone {
+                    width: 44px;
+                    height: 35px;
+                    display: inline-block;
+                    margin-left: 560px;
+                }
+                        #phone img {
+                            width: 30px;
+                            height: 30px;
+                            display: inline-block;
+                            
+                        }
+                #days{
+                    display: inline-block;
+                    margin-left: 562px;
+                }
+                .DNS h2{
+                    display: inline-block;
+                    vertical-align: top;
+                    margin-left: 10px;
+                }
+                #intphone{
+                    display: block;
+                    margin-left: 617px;
+                }
+            .clients {
+                background-color: red;
+                width: 829px;
+                height: 285px;
+            }
+            .big3{
+                background-color: saddlebrown;
+                width: 829px;
+                height: 285px;
+            }

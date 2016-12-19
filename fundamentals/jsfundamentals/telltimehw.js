@@ -2,26 +2,23 @@
 
 function time(hour, min, period) {
 
-if (hour > 13 && min < 61 && period == "am"||  period == "pm")  {
+if (hour < 13 && min < 61 && period == "am" ||  period == "pm")  {
 // note to self: first time i did this i accidentally assigned period to be am or pm by using only one "=" sign rather than using two to compare
     if (period == "am") {
-      // to self: i did the same mistake here i assigned rather than compared
-      var phrase = " in the morning";
+    var phrase = " in the morning";
     }
     else {
-      var phrase = " in the evening";
+      phrase = " in the evening";
     }
-    if (min < 30) {
+      if (min < 30) {
       console.log("Its just after " + hour + " " + period + phrase);
     }
-    else {
+      else {
       console.log("Its almost " + hour + " " + period + phrase);
     }
 }
-
 }
-
-time(11, 13, "pm")
+time(11, 12, "am")
 //note to self: last time i used function time(11, 13, "am") to call the function rather than just say time(11, 13, "pm")
 // 24 hour clock version vv
 //

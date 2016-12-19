@@ -1,0 +1,1 @@
+// print integers 1 = 100. if divisible by 5 print "coding" instead of number. if divisible by 10 and 5 print co
