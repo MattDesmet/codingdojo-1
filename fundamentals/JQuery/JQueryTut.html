@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--how to set up JQUery Library: link to the library, in one script tage, then CLOSE that script tage and OPEN A NEW ONE.-->
+    <script type="text/javascript">
+        $(document).ready(function () { //<!--this is the JQuery seletctor, dollar sign followed by open/close parentheses, anything i wrote in CSS or HTML can be controlled by putting it in these parentheses. i put document.ready to start b/c it tells it that when m ENTIRE css/html document is                                     ready, do to it what we tell you to do.
+            $('h4').click(function () { //we put function to get it ready for the code we put in. this allows the page to load first before it listens to execute the code we will write.
+                alert('hello');
+            });
+            $('#buthide').click(function () {
+                $('p').hide(function () {
+                });
+
+            });
+            $('#butshow').click(function () {
+                $('p').show(function () {
+                });
+            });
+            $('h1').hover(function () {
+                $('h2').text('I am a different text that occured when you hovered!');
+            }, function () {
+                alert('now because of anther function i am doing something different')//instead of alert i could also put console.log() and then it would show the message in the chrome debugger
+            });                             //console.log will also log variables if i define them first ex: //var dojo = ['peanuts', 'coding', 'tea'] the console of dojo would log this array.
+            $('.append').click(function () { //the more times i click the button, the more times it is appended (added) to :3, it goes away when page refreshed
+                $('.exapp').append('<h4> I a being added to a div because of .append when the button was clicked!</h4>');
+                });
+                $('button').click(function () {
+                $('button').css('background-color', 'pink'); //this refers to css to change the color of all my buttons when i click it! yay! if this aleady had a css property this would change it!
+                });
+            }); //debugging notes: when i go to the index for JQuery website, i can look up how i should have written stuff and it gives me examples and how it should be written <3//how do i find out if my Jquery is placed correctly? inspect element > go to left bar where i would type css, > select event listeners then it will show me the ones my page is waiitng for like .click and .hover <3
+    </script>
+</head>
+
+<body>
+    <h4>Click me!</h4>
+    <button id="butshow" type="">show stuff</button>
+    <button id="buthide" type="">Hides stuff</button>
+    <p>This is some text to show or hide</p>
+    <p>This is some more text, i'm going to hide myself when needed</p>
+    <h1>HOver and I will do stuff!</h1>
+    <h2>I will change when you hover!</h2>
+    <button class="append" type="">I will add some H3 stuff to a div when I am clicked because of the .append function </button>
+    <div class="exapp">
+        <p>hello</p>
+    </div>
+
+</body>
+
+</html>

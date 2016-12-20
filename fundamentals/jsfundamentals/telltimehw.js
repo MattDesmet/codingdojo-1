@@ -24,7 +24,7 @@ function time(hour, min, period) {
     }
   }
 }
-time(1, 55, "pm") //this doesnt work if I do 11
+time(11, 55, "pm") //this doesnt work if I do 11
 //note to self: last time i used function time(11, 13, "am") to call the function rather than just say time(11, 13, "pm")
 // 24 hour clock version vv
 //
