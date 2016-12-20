@@ -23,5 +23,5 @@ function daysuntilmybday(numDays) {
     }
 
 }
-daysuntilmybday(34)
+daysuntilmybday(44)
 
