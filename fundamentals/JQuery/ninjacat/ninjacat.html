@@ -1,0 +1,109 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Ninja Cat</title>
+    <link rel="stylesheet" type="text/css" href="ninjacat.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#cat0').hide(function () {
+                $('#ninja0').click(function () {
+                    $('#ninja0').slideUp("slow", function () {
+                    });
+                    $('#cat0').slideToggle("slow", function () {
+                    });
+                    $('#cat0').click(function () {
+                        $('#ninja0').slideToggle("slow", function () {
+                        });
+                        $('#cat0').slideUp("slow", function () {
+                        });
+                    });
+                });
+            });
+            $('#cat1').hide(function () {
+                $('#ninja1').click(function () {
+                    $('#ninja1').slideUp("slow", function () {
+                    });
+                    $('#cat1').slideToggle("slow", function () {
+                    });
+                    $('#cat1').click(function () {
+                        $('#ninja1').slideToggle("slow", function () {
+                        });
+                        $('#cat1').slideUp("slow", function () {
+                        });
+                    });
+                });
+            });
+            $('#cat2').hide(function () {
+                $('#ninja2').click(function () {
+                    $('#ninja2').slideUp("slow", function () {
+                    });
+                    $('#cat2').slideToggle("slow", function () {
+                    });
+                    $('#cat2').click(function () {
+                        $('#ninja2').slideToggle("slow", function () {
+                        });
+                        $('#cat2').slideUp("slow", function () {
+                        });
+                    });
+                });
+            });
+            $('#cat3').hide(function () {
+                $('#ninja3').click(function () {
+                    $('#ninja3').slideUp("slow", function () {
+                    });
+                    $('#cat3').slideToggle("slow", function () {
+                    });
+                    $('#cat3').click(function () {
+                        $('#ninja3').slideToggle("slow", function () {
+                        });
+                        $('#cat3').slideUp("slow", function () {
+                        });
+                    });
+                });
+            });
+            $('#cat4').hide(function () {
+                $('#ninja4').click(function () {
+                    $('#ninja4').slideUp(function () {
+                    });
+                    $('#cat4').slideToggle("slow", function () {
+                    });
+                    $('#cat4').click(function () {
+                        $('#ninja4').slideToggle("slow", function () {
+                        });
+                        $('#cat4').slideUp("slow", function () {
+                        });
+                    });
+                });
+            });
+            $('button').click(function(){
+                $('.show').show(function () {
+                });
+                $('.hide').hide(function(){
+                });
+            });
+        }); //end of .ready
+    </script>
+<!-- end of script for jquery-->
+</head>
+
+<body>
+    <div class="catninjas">
+        <img class="hide" id="cat0" src="cat0.png" alt="">
+        <img class="show" id="ninja0" src="ninja0.png" alt="">
+        <img class="hide" id="cat1" src="cat1.png" alt="">
+        <img class="show" id="ninja1" src="ninja1.png" alt="">
+        <img class="hide" id="cat2" src="cat2.png" alt="">
+        <img class="show" id="ninja2" src="ninja2.png" alt="">
+        <img class="hide" id="cat3" src="cat3.png" alt="">
+        <img class="show" id="ninja3" src="ninja3.png" alt="">
+        <img class="hide" id="cat4" src="cat4.png" alt="">
+        <img class="show" id="ninja4" src="ninja4.png" alt="">
+    </div>
+    <div class="button">
+        <button type="">Restart</button>
+    </div>
+</body>
+
+</html>

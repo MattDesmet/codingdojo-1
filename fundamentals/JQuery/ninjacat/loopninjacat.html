@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Ninja Cat</title>
+    <link rel="stylesheet" type="text/css" href="ninjacat.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('img').click(function () {
+                $(this).data('data-alt-src', $(this).attr('src'));//this is saying take the data from data alt source and attribute it to source
+                $(this).attr('src', $(this).attr('data-alt-src'));//this is saying attribute the source to the attribute that data alt source is
+                $(this).attr('data-alt-src', $(this).data('data-alt-src'));//this is saying attribute data alt source and make it the data from data alt source from earlier.
+            });
+
+            $('button').click(function () {
+                for (var i = 0; i < 5; i++) {
+                    $('#ninja' + i).data('src', $('#ninja' + i).attr('data-alt-src'));
+                    $('#ninja' + i).attr('data-alt-src', $('#ninja' + i).attr('src'));
+                    $('#ninja' + i).attr('src', $('#ninja' + i).data('data-alt-src'));
+                }
+            });
+
+        }); //end of .ready
+    </script>
+<!-- end of script for jquery-->
+</head>
+
+<body>
+    <div class="catninjas">
+        <img id="ninja0" src="ninja0.png" data-alt-src="cat0.png">
+        <img id="ninja1" src="ninja1.png" data-alt-src="cat1.png">
+        <img id="ninja2" src="ninja2.png" data-alt-src="cat2.png">
+        <img id="ninja3" src="ninja3.png" data-alt-src="cat3.png">
+        <img id="ninja4" src="ninja4.png" data-alt-src="cat4.png">
+    </div>
+    <div class="button">
+        <button type="">Restart</button>
+    </div>
+</body>
+
+</html>

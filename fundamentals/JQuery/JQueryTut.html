@@ -3,20 +3,54 @@
 
 <head>
     <title></title>
+    <link rel="stylesheet" type="text/css" href="JQuerytut.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <!--how to set up JQUery Library: link to the library, in one script tage, then CLOSE that script tage and OPEN A NEW ONE.-->
+    <!--how to set up JQUery Library: link to the library, in one script tage, then CLOSE that script tage and OPEN A NEW ONE.
+    if we want we can link ot our JS/JQuery script instead of putting it in our html document <3-->
     <script type="text/javascript">
         $(document).ready(function () { //<!--this is the JQuery seletctor, dollar sign followed by open/close parentheses, anything i wrote in CSS or HTML can be controlled by putting it in these parentheses. i put document.ready to start b/c it tells it that when m ENTIRE css/html document is                                     ready, do to it what we tell you to do.
             $('h4').click(function () { //we put function to get it ready for the code we put in. this allows the page to load first before it listens to execute the code we will write.
                 alert('hello');
             });
-            $('#buthide').click(function () {
-                $('p').hide(function () {
+            $('#slidetog').click(function () {
+                $('.box1').slideToggle("slow", function () {
                 });
-
+            });
+            $('#toggle').click(function () {
+                $('.box2').toggle(function () {
+                });
+                $('.box2').hide(function () {
+                });
+            });
+            $('.addclassbut').click(function () {
+                $('ol li').addClass("changecolor");
+            });
+            $("input").change(function () {
+                var $input = $(this);
+                $("p").html(".attr( 'checked' ): <b>" + $input.attr("checked") + "</b><br>" + //attribute function attributes to something in this case it attributed an input boolean of true false if the box was checked or not!
+                    ".prop( 'checked' ): <b>" + $input.prop("checked") + "</b><br>" +
+                    ".is( ':checked' ): <b>" + $input.is(":checked") + "</b>");
+            });
+            $('#afterme').click(function () {
+                $('h6').after("I am being inserted after");
+            });
+            $('#beforeme').click(function () {
+                $('h6').before("I am being inserted before");
             });
             $('#butshow').click(function () {
                 $('p').show(function () {
+                });
+            });
+            $('.box3').hide(function () {
+                $('#slidedwn').click(function () {
+                    $('.box3').slideDown("slow", function () {
+                    });
+                });
+            });
+            $('.box4').show(function () {
+                $('#slideup').click(function () {
+                    $('.box4').slideUp("slow", function () {
+                    });
                 });
             });
             $('h1').hover(function () {
@@ -26,12 +60,18 @@
             });                             //console.log will also log variables if i define them first ex: //var dojo = ['peanuts', 'coding', 'tea'] the console of dojo would log this array.
             $('.append').click(function () { //the more times i click the button, the more times it is appended (added) to :3, it goes away when page refreshed
                 $('.exapp').append('<h4> I a being added to a div because of .append when the button was clicked!</h4>');
-                });
-                $('button').click(function () {
+            });
+            $('button').click(function () {
                 $('button').css('background-color', 'pink'); //this refers to css to change the color of all my buttons when i click it! yay! if this aleady had a css property this would change it!
-                });
-            }); //debugging notes: when i go to the index for JQuery website, i can look up how i should have written stuff and it gives me examples and how it should be written <3//how do i find out if my Jquery is placed correctly? inspect element > go to left bar where i would type css, > select event listeners then it will show me the ones my page is waiitng for like .click and .hover <3
+            });
+        }); //debugging notes: when i go to the index for JQuery website, i can look up how i should have written stuff and it gives me examples and how it should be written <3//how do i find out if my Jquery is placed correctly? inspect element > go to left bar where i would type css, > select event listeners then it will show me the ones my page is waiitng for like .click and .hover <3
     </script>
+<!--//what is documentation? go to the api.jquery.com event listeners library. square brackets in api library examples means its optional.
+    //debugging Jquery more: inspect element, then go to console box and look for error messages. these messages display what the computer thinks should have happened, not what /I/ think should have happened./
+//Getters and setters functions: what the getter does is it spits out the value of the function. the setter sets the value of a function.
+Key word "this" what does it mean? it points to the element you are selecting ex. $('.blah'').click(function(){
+                                                                                    console.log(this)
+                                                                                    $(this).fadeOut())}; <-this part would change everything in the .blah class-->
 </head>
 
 <body>
@@ -40,13 +80,39 @@
     <button id="buthide" type="">Hides stuff</button>
     <p>This is some text to show or hide</p>
     <p>This is some more text, i'm going to hide myself when needed</p>
-    <h1>HOver and I will do stuff!</h1>
+    <h1>Hover and I will do stuff!</h1>
     <h2>I will change when you hover!</h2>
     <button class="append" type="">I will add some H3 stuff to a div when I am clicked because of the .append function </button>
     <div class="exapp">
         <p>hello</p>
+        <button type="">Set me!</button>
+        <button id="afterme" type="">after me!</button>
+        <button id="beforeme" type="">before me!</button>
+        <h6>I am being inserted to after clicking button</h6>
+        <button class="addclassbut" type="">add class!</button>
+        <p id="">Hello this text will display the getter and setter functions</p>
+        <input id="check1" type="checkbox" checked="checked">
+        <label for="check1">Check me</label>
+        <p class="changecolor">i am a paragraph that is yellow and relates to the add class function</p>
+        <ol>
+            <li>I am an attribution list</li>
+            <li>I am too!</li>
+            <li>me also!</li>
+        </ol>
     </div>
-
+    <div class="box1">
+        <button id="slidetog" type="">slidetog</button>
+    </div>
+    <div class="box2">
+        <button id="toggle" type="">toggle</button>
+    </div>
+    <button id="slidedwn" type="">slidedwn</button>
+    <div class="box3">
+    </div>
+        <button id="slideup" type="">slideup</button>
+    <div class="box4">
+    </div>
+    <img src="Jquery_cheat_sheet.png" alt="i'm a cheat sheet'">
 </body>
 
 </html>

@@ -2,8 +2,7 @@
 
 function time(hour, min, period) {
 
-  if (hour < 13 && min < 61 && period == "am" || period == "pm") {
-    // note to self: first time i did this i accidentally assigned period to be am or pm by using only one "=" sign rather than using two to compare
+  if (hour < 13 && min < 61 && period == "am" || period == "pm") {    // note to self: first time i did this i accidentally assigned period to be am or pm by using only one "=" sign rather than using two to compare
     if (period == "am") {
       var phrase = " in the morning";
     }

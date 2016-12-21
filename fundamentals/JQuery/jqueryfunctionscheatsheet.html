@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#click").click(function(){
+          alert('you clicked me...')
+        })
+        $('#hide').click(function(){
+          $(this).siblings('p').hide()
+        })
+        $('#show').click(function(){
+          $(this).siblings('p').show()
+        })
+        $('#toggle').click(function(){
+          $(this).siblings('p').toggle()
+        })
+        $('#slideDown').click(function(){
+          $(this).siblings('p').slideDown()
+        })
+        $('#slideUp').click(function(){
+          $(this).siblings('p').slideUp()
+        })
+        $('#slideToggle').click(function(){
+          $(this).siblings('p').slideToggle()
+        })
+        $('#fadeIn').click(function(){
+          $(this).siblings('p').fadeIn()
+        })
+        $('#fadeOut').click(function(){
+          $(this).siblings('p').fadeOut()
+        })
+        $('#addClass').click(function(){
+          $(this).siblings('p').addClass('red')
+        })
+        $('#before').click(function(){
+          $(this).siblings('p').before('<h1>Hi Kris</h1>')
+        })
+        $('#after').click(function(){
+          $(this).siblings('p').after('<h1>Hi Kris</h1>')
+        })
+        $('#append').click(function(){
+          $(this).siblings('p').append('<h1>Hi Kris</h1>')
+        })
+        $('#html').click(function(){
+          $(this).html('<h1>Hi Kris</h1>')
+        })
+        $('#attr').click(function(){
+          $(this).siblings('h6').append($(this).siblings('h6').attr('some'));
+        })
+        $('#val').click(function(){
+          $(this).siblings('input').val('Bye Kris');
+        })
+        $('#text').click(function(){
+          $(this).siblings('p').text('Bye Text');
+        })
+        $('#data').click(function(){
+          $(this).parent().data('name', 'Kristoffer Rolf Eugene Frisch-Ekenes')
+        })
+        $('#extract').click(function(){
+          $(this).siblings('p').html($(this).parent().data('name'))
+        })
+      })
+    </script>
+    <style media="screen">
+      .red {
+        font-weight: bolder;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="funStuff">
+      <h1>.click</h1>
+      <button id='click'>Click me!</button>
+      <p>Click this button to activate the click!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.hide</h1>
+      <button id='hide'>Click me!</button>
+      <p>Click this button to activate the hide!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.show</h1>
+      <button id='show'>Click me!</button>
+      <p style="display:none">Click this button to activate the show!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.toggle</h1>
+      <button id='toggle'>Click me!</button>
+      <p>Click this button to activate the toggle!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.slideDown</h1>
+      <button id='slideDown'>Click me!</button>
+      <p style="display:none">Click this button to activate the slideDown!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.slideUp</h1>
+      <button id='slideUp'>Click me!</button>
+      <p>Click this button to activate the slideUp!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.slideToggle</h1>
+      <button id='slideToggle'>Click me!</button>
+      <p>Click this button to activate the slideToggle!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.fadeIn</h1>
+      <button id='fadeIn'>Click me!</button>
+      <p style="display:none">Click this button to activate the fadeIn!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.fadeOut</h1>
+      <button id='fadeOut'>Click me!</button>
+      <p>Click this button to activate the fadeOut!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.addClass</h1>
+      <button id='addClass'>Click me!</button>
+      <p>Click this button to activate the addClass!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.before</h1>
+      <button id='before'>Click me!</button>
+      <p>Click this button to activate the before!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.after</h1>
+      <button id='after'>Click me!</button>
+      <p>Click this button to activate the after!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.append</h1>
+      <button id='append'>Click me!</button>
+      <p>Click this button to activate the append!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.html</h1>
+      <button id='html'>Click me!</button>
+      <p>Click this button to activate the html!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.attr</h1>
+      <button id='attr'>Click me!</button>
+      <p>Click this button to activate the attr!</p>
+      <h6 some='World'>Hello </h6>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.val</h1>
+      <button id='val'>Click me!</button>
+      <p>Click this button to activate the val!</p>
+      <input type="text" name="" value="Hi Kris">
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.text</h1>
+      <button id='text'>Click me!</button>
+      <p>Click this button to activate the text!</p>
+      <hr>
+    </div>
+    <div class="funStuff">
+      <h1>.data</h1>
+      <button id='data'>Click me!</button>
+      <p>Click this button to activate the data!</p>
+      <button id='extract'>Extract the data</button>
+      <hr>
+    </div>
+  </body>
+</html>

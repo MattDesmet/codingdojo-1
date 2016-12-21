@@ -1,0 +1,19 @@
+body {
+    background-color: lightpink;
+}
+.doggy{
+    display: inline-block;
+    background-color: lightpink;
+}
+    .doggy img {
+        height: 300px;
+        width: 280px;
+        margin: 10px;
+        border: 2px solid red;
+}
+.button {
+    display: inline-block;
+}
+    .button button {
+        background-color: mediumslateblue;
+    }

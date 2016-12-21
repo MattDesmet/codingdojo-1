@@ -1,0 +1,27 @@
+.changecolor{
+    color: yellow;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: lawngreen;
+
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: lightseagreen;
+
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: seagreen;
+
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+
+}

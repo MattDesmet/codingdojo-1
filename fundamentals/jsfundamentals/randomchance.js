@@ -13,4 +13,4 @@ function slots (nQuarters){
 
 console.log( slots(80) )//this returns the number of coins remaining that they started with + what they won. because its 50 it should be 0 half the time this function is run.
 
-//when approaching this problem deconstruct it inot components step 1. win amount is being asked for. step 2. win probability is being asked for. step 3. whether or not they won each time is being asked for step 4. loop back if they still have quarters. step 5. return values step 6. logging and testing to see if number of quarters given and chance of winning are proportionate.
+//when approaching this problem deconstruct it into components step 1. win amount is being asked for. step 2. win probability is being asked for. step 3. whether or not they won each time is being asked for step 4. loop back if they still have quarters. step 5. return values step 6. logging and testing to see if number of quarters given and chance of winning are proportionate.

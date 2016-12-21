@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="ninjaarean.css">
+        <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            for(var i=1;i< 7;++){
+            $('#img'+i).hide();
+            $('#button'+i).hover(function (){
+                $('#img'+i).show();
+                },function (){
+                    $('#img'+i).hide();
+                });
+                $('#button'+i).click(function (){
+                });
+            }
+            });
+        </script>
+    </head>
+    <body>
+        <div class="home">
+            <div class="begin">
+                <h2>Select Arena</h2>
+                <button id="button1" type="">beach</button> 
+                <button id="button2" type="">planet</button>
+                <button id="button3" type="">dojo</button>
+                <button id="button4" type="">forest</button>
+                <button id="button5" type="">matrix</button>
+                <button id="button6" type="">snow</button>
+                <div class="imgs">
+                    <img id="img1" src="beach.jpg" alt="">
+                    <img id="img2" src="earth.jpg" alt="">
+                    <img id="img3" src="dojo.jpg" alt="">
+                    <img id="img4" src="forest.jpg" alt="">
+                    <img id="img5" src="matrix.jpg" alt="">
+                    <img id="img6" src="snow.jpg" alt="">
+                </div>
+                
+            </div>
+            
+        </div>
+    </body>
+</html>
